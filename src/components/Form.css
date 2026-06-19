@@ -1,0 +1,84 @@
+/* Centering wrapper to place the form directly in the middle of the viewport screen */
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f4f7f6; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* The elegant box container holding the inputs */
+.form-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Heading style */
+.form-card h1 {
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Group wrapper stacking label on top of input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Input boxes styling */
+.form-group input {
+    padding: 12px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Blue outline focus glow effect when a user clicks inside an input */
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Placeholder text color customization */
+.form-group input::placeholder {
+    color: #aaaaaa;
+}
+
+/* Submit Button configuration style */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+/* Hover color animation change */
+.submit-btn:hover {
+    background-color: #0056b3;
+}

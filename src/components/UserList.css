@@ -1,0 +1,178 @@
+/* Container layout wrapping the table grid */
+.table-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-container h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+}
+
+/* Base table architecture setup */
+.user-table {
+    width: 100%;
+    border-collapse: collapse; /* Enforces single-line clean borders */
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Header style rules */
+.user-table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 15px;
+    border: 1px solid #007bff;
+}
+
+/* Body cell style rules */
+.user-table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    color: #444444;
+}
+
+/* Zebra striping to make rows easy to read alternating rows */
+.user-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Smooth fade background change when highlighting a row with your mouse */
+.user-table tbody tr:hover {
+    background-color: #f1f3f5;
+    transition: background-color 0.2s ease;
+}
+
+/* Empty data row configuration styles */
+.user-table .no-data {
+    text-align: center;
+    color: #888888;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Container framework styling */
+.fetch-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header action bar aligning layout items side-by-side */
+.fetch-header-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.fetch-header-action h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 22px;
+}
+
+/* Action button style configuration */
+.fetch-btn {
+    background-color: #28a745; /* Clean green for actions */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.fetch-btn:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.fetch-btn:disabled {
+    background-color: #a7e1b5;
+    cursor: not-allowed;
+}
+
+/* Base table layout setup */
+.user-table {
+    width: 100%;
+    border-collapse: collapse; /* Keeps layout single-line sharp */
+    font-size: 16px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #343a40; /* Dark slate header to differentiate from your regular table */
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 15px;
+}
+
+.user-table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    color: #444444;
+}
+
+.id-column {
+    color: #888888;
+    font-weight: bold;
+    width: 80px;
+}
+
+/* Row hover states */
+.user-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Feedback Box Status Wrapper System */
+.status-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.loading-box {
+    background-color: #e8f4fd;
+    color: #0056b3;
+}
+
+.error-box {
+    background-color: #fde8e8;
+    color: #c81e1e;
+    border-left: 4px solid #e11d48;
+}
+
+/* Dynamic CSS Loader Spinner */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #bce0fd;
+    border-top-color: #0056b3;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
